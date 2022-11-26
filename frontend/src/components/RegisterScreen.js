@@ -78,7 +78,7 @@ const RegisterScreen = ({location, history}) => {
               Register
             </title>
           </Helmet>
-          	<Image className="wave" src={wave} />
+          	<Image className="wave" src="https://p.kindpng.com/picc/s/185-1859678_fifa-world-cup-qatar-2022-logo-hd-png.png" />
 
             <div className="containera">
               

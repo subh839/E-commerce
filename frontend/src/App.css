@@ -384,7 +384,7 @@ nav {
   background: url("https://i.imgur.com/roN4Tqt.jpg") no-repeat center top/cover;
 }
 .cardscg:nth-child(3) {
-  background: url("./img1.jpg") no-repeat center top/cover;
+  background: url("https://thumbs.dreamstime.com/b/fashion-clothes-short-sleeve-shirt-jeans-mens-photos-made-white-background-148910225.jpg") no-repeat center top/cover;
 }
 
 /* --- CgDiv ----*/
@@ -674,7 +674,7 @@ nav {
     opacity: 0;
   }
   .slide:first-child {
-    background: url("product2media.png") no-repeat center top/cover;
+    background: url("https://thumbs.dreamstime.com/b/fashion-clothes-short-sleeve-shirt-jeans-mens-photos-made-white-background-148910225.jpg") no-repeat center top/cover;
   }
   .slide:nth-child(2) {
     /* position: absolute; */
