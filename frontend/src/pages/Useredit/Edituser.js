@@ -113,10 +113,6 @@ const Edituser = ({match,history}) => {
                   
            		</div>
 
-
-
-                
-
            		<div className="input-div pass">
            		   <div className="div">
            		    	<Checkbox isChecked={isAdmin} onChange = {(e)=>{setisAdmin(e.target.checked) ; console.log(isAdmin)}}>isAdmin</Checkbox>
@@ -126,10 +122,6 @@ const Edituser = ({match,history}) => {
                 <input type="submit" className="btna2" value="Update"/>
                 
                 </div>
-                
-               
-            	
-                
               
             </form>
             </div>

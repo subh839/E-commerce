@@ -102,7 +102,7 @@ const createProduct = asyncHandler(async (req, res) => {
         description : 'sample description',
         user : req.user._id,
         sizes : [],
-        images : ['https://i.imgur.com/QN2BSdJ.jpg','https://i.imgur.com/QN2BSdJ.jpg','https://i.imgur.com/QN2BSdJ.jpg'],
+        images : ['https://m.media-amazon.com/images/I/61N6aMRFDWL._UX569_.jpg','https://m.media-amazon.com/images/I/61N6aMRFDWL._UX569_.jpg','https://m.media-amazon.com/images/I/61N6aMRFDWL._UX569_.jpg'],
         category : [],
         countInStock :  0,
         numReviews : 0

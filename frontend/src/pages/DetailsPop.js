@@ -68,10 +68,10 @@ export default function DetailsPop({open,children,OnClose}) {
            <div style={PRODUCTS_IMGS}>
                <div style={img_display}>
                    <div style={img_showcase}>
-                   <Image style={img}  src={'https://preview.colorlib.com/theme/cozastore/images/product-detail-03.jpg'} />  
-                   <Image style={img}   src={'https://preview.colorlib.com/theme/cozastore/images/product-detail-01.jpg'} />  
-                   <Image style={img}   src={'https://preview.colorlib.com/theme/cozastore/images/product-detail-02.jpg'} /> 
-                   <Image style={img}  src={'https://preview.colorlib.com/theme/cozastore/images/product-11.jpg'} /> 
+                   <Image style={img}  src={'https://preview.colorlib.com/theme/cozastore/images/banner-02.jpg.webp'} />  
+                   <Image style={img}   src={'https://preview.colorlib.com/theme/cozastore/images/banner-02.jpg.webp'} />  
+                   <Image style={img}   src={'https://preview.colorlib.com/theme/cozastore/images/banner-02.jpg.webp'} /> 
+                   <Image style={img}  src={'https://preview.colorlib.com/theme/cozastore/images/banner-02.jpg.webp'} /> 
                    </div>
                </div>
                <div style={img_select}>

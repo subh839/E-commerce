@@ -14,7 +14,7 @@ const Users = [
     },
     {
         name : 'Soufian Zaam',
-        email : 'Soufian.Zaam@ump.ac.com',
+        email : '.Zaam@ump.ac.com',
         password : bcrypt.hashSync('zaam2020',12),
         isAdmin : true
     },

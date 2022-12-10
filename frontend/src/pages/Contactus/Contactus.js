@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Image } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
-
-import cover from './cover.jpg'
 import { Input,InputGroup, InputLeftElement, Textarea,Button  } from "@chakra-ui/react"
 import {BsEnvelope, GiPositionMarker, HiOutlinePhone} from 'react-icons/all'
 import './contactuscss.css'
@@ -20,7 +18,7 @@ const Contactus = () => {
                 <title>Contact</title>
             </Helmet>
         <div className="headerContact">
-            <Image className="imageContact" src='https://images.indianexpress.com/2018/01/men-fashion-759-filephoto.jpg' alt="contactImage" objectFit="cover"/>
+            <Image className="imageContact" src='https://images.indianexpress.com/2018/01/men-fashion-759-filephoto.jpg' alt="contactImage" objectFit=""/>
             <div className="text">
                 <h2>Contact</h2>  
             </div>
@@ -51,7 +49,7 @@ const Contactus = () => {
                     <div className="adressCtn">
 
                         <h3> Address</h3>
-                        <p>Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
+                        <p>West Bengal,India</p>
                     </div>
                 </div>
                     <div className="box">
@@ -59,7 +57,7 @@ const Contactus = () => {
                     <div className="adressCtn">
 
                         <h3>Lets Talk</h3>
-                        <p className="infoCtn">+91-9876543219</p>
+                        <p className="infoCtn">+91-8981349471</p>
                     </div>
                 </div>
                 <div className="box">

@@ -98,20 +98,20 @@ const submithanlder = () =>{
           <div className = "img-select">
             <div className = "img-item">
               <a href = "#" data-id = "1">
-                <Image  objectFit="cover" boxSize = '200px' src = {product.images[0]} alt = "shoe image"/>
+                <Image  objectFit="cover" boxSize = '200px' src ="https://m.media-amazon.com/images/I/61N6aMRFDWL._UX569_.jpg"alt = "shoe image"/>
 
 
               </a>
             </div>
             <div className = "img-item">
               <a href = "#" data-id = "2">
-                <Image  objectFit="cover" boxSize = '200px' src = {product.images[1]} alt = "shoe image"/>
+                <Image  objectFit="cover" boxSize = '200px' src = "https://m.media-amazon.com/images/I/61N6aMRFDWL._UX569_.jpg" alt = "shoe image"/>
 
               </a>
             </div>
             <div className = "img-item">
               <a href = "#" data-id = "3">
-                <Image  objectFit="cover"  boxSize = '200px' src = {product.images[2]} alt = "shoe image"/>
+                <Image  objectFit="cover"  boxSize = '200px' src = "https://m.media-amazon.com/images/I/61N6aMRFDWL._UX569_.jpg" alt = "shoe image"/>
 
 
               </a>

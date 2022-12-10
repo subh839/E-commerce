@@ -23,17 +23,17 @@
   font-weight: 800;
   position: absolute;
   top: 13px;
-  color: #ebebeb;
+  color: #cf9a9a;
   right: 130px;
   height: 25px;
   width: 25px;
   border-radius: 10px;
-  background-color: #0071dc;
+  background-color: #093258;
 }
 .loading {
   z-index: 20;
   text-align: center;
-  background-color: #fff;
+  background-color: rgb(163, 81, 81);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,11 +60,11 @@ nav {
   z-index: 1000;
 }
 .nav.active {
-  background: white;
+  background: rgb(80, 76, 76);
   box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.4);
 }
 .activenav {
-  border-bottom: 0.1px #cccccc solid;
+  border-bottom: 0.1px #998f8f solid;
 }
 .navLinks {
   width: 100%;
@@ -179,7 +179,7 @@ nav {
   width: 190px;
   align-items: center;
   border: none;
-  background-color: #1e1e2c;
+  background-color: #252552;
   color: rgb(241, 241, 241);
   border-radius: 30px;
   font-size: 19px;
@@ -190,7 +190,7 @@ nav {
 .ShopNow:hover {
   color: #1e1e2c;
   cursor: pointer;
-  background-color: #ebebeb;
+  background-color: #968383;
 }
 .ShopNow::before {
   position: absolute;
@@ -274,16 +274,16 @@ nav {
 /*background Images */
 
 .slide:first-child {
-  background: url("https://i.imgur.com/jJYOdBg.jpg") no-repeat center top/cover;
+  background: url("https://thumbs.dreamstime.com/b/portrait-man-yellow-background-colorful-handsome-dressed-white-t-shirt-jacket-jeans-90177185.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(2) {
-  background: url("https://i.imgur.com/7rwaigw.jpg") no-repeat center top/cover;
+  background: url("https://cdn.shopify.com/s/files/1/0752/6435/products/HERO_c217fecf-be79-4f9f-b940-3bb7dfe07043.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(3) {
-  background: url("https://i.imgur.com/3Obf6Tt.jpg") no-repeat center top/cover;
+  background: url("https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/71/947319/1.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(4) {
-  background: url("https://i.imgur.com/laeEnPm.jpg") no-repeat center top/cover;
+  background: url("https://i.pinimg.com/736x/49/e3/14/49e31456917ef7f922f7a91d2bcc0420.jpg") no-repeat center top/cover;
 }
 /*/////////////Categories Cards ///////////////*/
 .cards {
@@ -335,7 +335,7 @@ nav {
   transition: 0.5s all ease;
 }
 .cardscg:hover * {
-  color: white;
+  color: rgb(107, 66, 66);
   z-index: 3;
 }
 .cardscg::after {
@@ -358,7 +358,7 @@ nav {
   right: 0;
   opacity: 0.9;
   z-index: 0;
-  background: linear-gradient(180deg, rgb(75, 57, 116), rgba(0, 0, 0, 0.493));
+  background: linear-gradient(180deg, rgb(120, 110, 145), rgba(0, 0, 0, 0.493));
 }
 .ShopNowcg::after {
   content: "";
@@ -378,10 +378,10 @@ nav {
   right: 0;
 }
 .cardscg:first-child {
-  background: url("https://i.imgur.com/ugsxgsY.jpg") no-repeat center top/cover;
+  background: url("https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2022/03/07/3107776-589488286.jpg") no-repeat center top/cover;
 }
 .cardscg:nth-child(2) {
-  background: url("https://i.imgur.com/roN4Tqt.jpg") no-repeat center top/cover;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg") no-repeat center top/cover;
 }
 .cardscg:nth-child(3) {
   background: url("https://thumbs.dreamstime.com/b/fashion-clothes-short-sleeve-shirt-jeans-mens-photos-made-white-background-148910225.jpg") no-repeat center top/cover;
@@ -432,11 +432,11 @@ nav {
   min-width: 100px;
   height: 40px;
   cursor: pointer;
-  color: #888;
+  color: rgb(151, 140, 140);
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   font-family: "Poppins-Regular", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #d1bdbd;
   font-size: 15px;
   line-height: 1.2;
   transition: all 0.2s;
@@ -453,7 +453,7 @@ nav {
 .filterbtn:hover,
 .searchbtn:hover {
   color: white;
-  background-color: rgb(113, 127, 224);
+  background-color: rgb(25, 44, 167);
 }
 
 .lined {
@@ -569,7 +569,7 @@ nav {
   background-color: #ffffff;
   box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.2);
 
-  color: rgb(48, 50, 83);
+  color: rgb(25, 26, 56);
   border-radius: 30px;
   font-size: 15px;
   outline: none;
@@ -630,7 +630,7 @@ nav {
 /******************************MEDIA **********/
 @media screen and (max-width: 1280px) {
   nav {
-    background-color: #ffffff;
+    background-color: #d4c5c5;
   }
   .navLinks {
     width: 100%;
@@ -803,6 +803,6 @@ img {
 }
 
 .process-check .btn-process:hover {
-  background: #f64749;
+  background: #8a3f41;
   color: rgb(13, 13, 65);
 }
