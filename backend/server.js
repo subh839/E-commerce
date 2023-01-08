@@ -1,32 +1,35 @@
 import path from "path";
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import connectDB from "./config/db.js";
 import morgan from "morgan";
 import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+import paymentRoutes from "./routes/payment.js";
 
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
+
 dotenv.config();
 
-connectDB();
-
 const app = express();
+
+app.use(express.json());
+app.use(cors());
+
+connectDB();
 
 if (process.env.NODE_ENV === "developement") {
   app.use(morgan("dev"));
 }
 
-app.use(express.json());
-
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
-app.get("/api/config/paypal", (req, res) =>
-  res.send(process.env.PAYPAL_CLIENT_ID)
-);
+app.use("/api/payment", paymentRoutes);
+
 
 const __dirname = path.resolve();
 

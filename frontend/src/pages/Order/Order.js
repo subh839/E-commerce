@@ -12,7 +12,7 @@ import './Order.css'
 import { ORDER_PAY_RESET,ORDER_DELIVER_RESET } from '../../constants/orderConstants';
 import { Button } from '@chakra-ui/button';
 const Order = ({match,history}) => {
-    const [sdkReady, setsdkReady] = useState(false)
+  
     const orderId = match.params.id
     const dispatch = useDispatch();
     const orderDetails = useSelector(state => state.orderDetails)
@@ -35,18 +35,7 @@ const Order = ({match,history}) => {
         if(!userInfo){
             history.push('/login')
         }
-        const addPaypalscript = async () =>{
-            const {data : clientId} = await axios.get('/api/config/paypal ') 
-            const script = document.createElement('script')
-            script.type = 'text/javascript'
-            script.async = true
-            script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}`
-            script.onload = () =>{
-                setsdkReady(true)
-            }
-            document.body.appendChild(script)
-
-        }
+       
         if(!order || successPay || successDeliver || order._id !== orderId){
             dispatch({
                 type:ORDER_PAY_RESET
@@ -56,11 +45,7 @@ const Order = ({match,history}) => {
             })
             dispatch(getOrderDetails(orderId))
         }else if(!order.isPaid){
-            if(!window.paypal){
-                addPaypalscript();
-            }else{
-                setsdkReady(true)
-            }
+          
         }
         
     }, [dispatch,orderId,successPay,orderPay,successDeliver,userInfo])
@@ -138,27 +123,7 @@ const Order = ({match,history}) => {
                                 
                             
                         </div>
-                        <div className = 'bottominfos'>
-                        <h1 className = 'orderid'>Order : {order._id}</h1>
-                        {!order.isPaid && (
-                            <>
-                            {loadingpay && <div className='loading-product'>
-                                            <HashLoader   color={"#1e1e2c"}  loading={loading} size={50} />
-                                           </div> }
-                            {!sdkReady ? <div className='loading-product'>
-                                            <HashLoader   color={"#1e1e2c"}  loading={loading} size={50} />
-                                           </div> :
-                                           <div className = 'paypalbuttons'>
-                                           <PayPalButton className = 'buttonsp' amount = {order.totalPrice} onSuccess = {successpaymenthandler}/>
-                                           </div>}
-                            </>
-                        )}
-                        {userInfo && userInfo.isAdmin && order.isPaid && !order.isDelivered &&(
-                            <Button   height="40px" width = "200px"
-                            size = "lg" onClick = {deliverhandler} leftIcon = {<IoMdDoneAll size = '16' />} colorScheme ='blue' size="xs" >DELIVERED</Button>
-                        )}
-
-                        </div>
+                      
 
                     
                     </div>

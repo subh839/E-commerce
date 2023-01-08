@@ -28,7 +28,7 @@ const Productoncart = ({product}) => {
     return (
         <div className = 'productcart'>
             <div className = 'imagecart'>
-            <Image objectFit="cover" src ="https://thumbs.dreamstime.com/b/fashion-clothes-short-sleeve-shirt-jeans-mens-photos-made-white-background-148910225.jpg"/>
+            <Image objectFit="cover" src =""/>
 
             </div>
                 <div>

@@ -1,3 +1,4 @@
+
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import About from './pages/About/About'
@@ -23,20 +24,24 @@ import Edituser from './pages/Useredit/Edituser'
 import Products from './pages/products/products'
 import Editproduct from './pages/Editproduct/Editproduct'
 import Orders from './pages/Orders/Orders'
-
+import axios from "axios";
+//import { useState } from "react";
 
  const App = () => { 
   const  [loading,setLoading] = useState(false)
+ 
   useEffect(() => {
     setLoading(true)
     setTimeout( ()=> {
       setLoading(false)
-    },3000)
+    },3001)
 
   }, [])
-
+ 
   return (
     <div className = 'main'>
+     
+    
 <ChakraProvider>
        <Router>
          <ScrollIntoView>

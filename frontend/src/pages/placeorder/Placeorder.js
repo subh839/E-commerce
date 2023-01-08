@@ -89,10 +89,7 @@ const Placeorder = ({history}) => {
                                 <h3>Shipping: </h3><p>${cart.shippingPrice}</p>
                                 <h3>Tax: </h3><p>${cart.taxPrice}</p>
                                 <h3>Total: </h3><p>${cart.totalPrice}</p>
-                                <div className="div-placeorder-btn"> 
-                                    <button className="placeorder-btn" onClick = {Placeorderhanlder}>Place Order</button>
-                                    {error && error}
-                                </div>
+                             
                               </div>
 
                                 
