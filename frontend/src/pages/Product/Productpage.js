@@ -128,8 +128,8 @@ const submithanlder = () =>{
               text={`${product.numReviews} reviews`}
               />
           <div className = "product-price">
-            <p className = "last-price">Old Price: <span>${product.price + product.price * 0.5}</span></p>
-            <p className = "new-price">New Price: <span>${product.price} (5%)</span></p>
+            <p className = "last-price">Old Price: <span> ₹{product.price + product.price * 0.5}</span></p>
+            <p className = "new-price">New Price: <span> ₹{product.price} (5%)</span></p>
           </div>
           
           <div className = "product-detail">

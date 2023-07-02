@@ -8,9 +8,9 @@ const Users = [
         isAdmin : true
     },
     {
-        name : 'Salama khan',
-        email : 'kgf.Zaam@ump.ac.com',
-        password : bcrypt.hashSync('sazaam2022',12),
+        name : 'Salaman khan',
+        email : 'kgfklm@ump.ac.com',
+        password : bcrypt.hashSync('salaam2022',12),
         isAdmin : true
     }
     

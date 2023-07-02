@@ -31,7 +31,7 @@ const CardProduct = ({product}) => {
             <div className='cardProduct' onMouseOver={ ()=> {setShowbtn (true)}} 
                                           onMouseLeave= { ()=> {setShowbtn (false)}}>           
                  <div className='imgDiv'>
-                         <Image className='imgProduct' boxSize='350px' objectFit='cover' src="https://thumbs.dreamstime.com/b/fashion-clothes-short-sleeve-shirt-jeans-mens-photos-made-white-background-148910225.jpg" />  
+                         <Image className='imgProduct' boxSize='350px' objectFit='cover' src={`${product.images}`}/>  
                  </div>
                <div className='bottomcard'>
                        <Link to={`/product/${product._id}`} exact  >     
@@ -39,7 +39,7 @@ const CardProduct = ({product}) => {
                        </Link>
                               {Incart ?  <HiShoppingCart className="iconFav" size ='26'/> : <HiOutlineShoppingCart  className="iconFav" color='#999' size='26'  onClick = {addcart}/>  }
 
-                       <div className = 'productpricecard'> {`${product.price} $`}</div>
+                       <div className = 'productpricecard'> {`${product.price} ₹`}</div>
                        <div className = 'Rating'>
                        <Rating value={product.rating} text={`${product.numReviews} reviews`}/>
 

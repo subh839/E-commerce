@@ -39,7 +39,7 @@ const Productoncart = ({product}) => {
                     </Link>
 
                 <h2 className = 'priceproduct'>
-                    {product.price}$</h2>
+                    {product.price} ₹</h2>
                 <h2 className = 'sandh'>
                     sold and shiped by FedEx</h2>
 
@@ -53,7 +53,7 @@ const Productoncart = ({product}) => {
                     )}
                 </Select>
                 <h2>
-                {(qty === 0 ? product.qty*product.price : qty*product.price).toFixed(2)}$
+                {(qty === 0 ? product.qty*product.price : qty*product.price).toFixed(2)} ₹
                 </h2>
                 </div>
                 <VscChromeClose className = 'deletecart' size = '26' onClick = {() => removeFromCartHandler(product.product)} />

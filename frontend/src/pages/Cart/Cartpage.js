@@ -50,7 +50,7 @@ const Cartpage = ({match,location,history}) => {
             {cartItems.reduce((acc,item )=>
                 acc + item.qty * item.price,0
 
-             ).toFixed(2)}$
+             ).toFixed(2)} ₹
             </h3>
             <h3>
             Delivery :
@@ -76,7 +76,7 @@ const Cartpage = ({match,location,history}) => {
             {cartItems.reduce((acc,item )=>
                 acc + item.qty * item.price,0
 
-             ).toFixed(2)}$
+             ).toFixed(2)} ₹
             </h3>
             <button className = 'checkoutbtn' disabled={cartItems.length===0} onClick={checkoutHandler}>
             CHECKOUT
