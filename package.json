@@ -1,5 +1,5 @@
 {
-  "name": "s",
+  "name": "shopping",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
@@ -114,7 +114,6 @@
     "data:destroy": "node backend/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "SUBH",
-  "license": "MIT",
-  "description": "shopping app"
+  "author": "subh839",
+  "description": "e-kart app"
 }
